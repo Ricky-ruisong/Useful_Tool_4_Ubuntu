@@ -12,26 +12,26 @@ sudo ./Useful_Tool_4_Ubuntu
 首先：gedit ～/.config/terminator/config<br>
 以下是一款流行的配置方案，可自行调整<br>
 [global_config]<br>
- \t suppress_multiple_term_dialog = True<br>
+>suppress_multiple_term_dialog = True<br>
 [keybindings]<br>
 [profiles]<br>
-\t  [[default]]<br>
-\t    background_color = "#002b36"<br>
-    background_darkness = 0.92<br>
-    background_type = transparent<br>
-    cursor_color = "#3036ec"<br>
-    font = Ubuntu Mono 15<br>
-    foreground_color = "#839496"<br>
-    show_titlebar = False<br>
-    login_shell = True<br>
-    custom_command = tmux<br>
-    use_system_font = False<br>
+>  [[default]]<br>
+>>    background_color = "#002b36"<br>
+>>   background_darkness = 0.92<br>
+>>    background_type = transparent<br>
+>>  cursor_color = "#3036ec"<br>
+>>   font = Ubuntu Mono 15<br>
+>>   foreground_color = "#839496"<br>
+>>   show_titlebar = False<br>
+>>   login_shell = True<br>
+>>   custom_command = tmux<br>
+>>   use_system_font = False<br>
 [layouts]<br>
-  [[default]]<br>
-    [[[window0]]]<br>
-      type = Window<br>
-      parent = ""<br>
-    [[[child1]]]<br>
-      type = Terminal<br>
-      parent = window0<br>
+> [[default]]<br>
+>>    [[[window0]]]<br>
+>>>    type = Window<br>
+>>>    parent = ""<br>
+>>    [[[child1]]]<br>
+>>>    type = Terminal<br>
+>>>   parent = window0<br>
 [plugins]<br>
