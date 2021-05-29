@@ -11,31 +11,28 @@ sudo ./Useful_Tool_4_Ubuntu
 ## Terminator推荐方案
 首先：gedit ～/.config/terminator/config<br>
 以下是一款流行的配置方案，可自行调整<br>
-[global_config]
-  suppress_multiple_term_dialog = True
-[keybindings]
-[profiles]
-  [[default]]
-    background_color = "#002b36"
-    background_darkness = 0.92
-    background_type = transparent
-    cursor_color = "#3036ec"
-    font = Ubuntu Mono 15
-    foreground_color = "#839496"
-    show_titlebar = False
-    login_shell = True
-    custom_command = tmux
-    use_system_font = False
-[layouts]
-  [[default]]
-    [[[window0]]]
-      type = Window
-      parent = ""![在这里插入图片描述](https://img-blog.csdnimg.cn/20200430223930797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZlaW1lbmcxMTY=,size_16,color_FFFFFF,t_70)
+[global_config]<br>
+  suppress_multiple_term_dialog = True<br>
+[keybindings]<br>
+[profiles]<br>
+  [[default]]<br>
+    background_color = "#002b36"<br>
+    background_darkness = 0.92<br>
+    background_type = transparent<br>
+    cursor_color = "#3036ec"<br>
+    font = Ubuntu Mono 15<br>
+    foreground_color = "#839496"<br>
+    show_titlebar = False<br>
+    login_shell = True<br>
+    custom_command = tmux<br>
+    use_system_font = False<br>
+[layouts]<br>
+  [[default]]<br>
+    [[[window0]]]<br>
+      type = Window<br>
+      parent = ""![在这里插入图片描述](https://img-blog.csdnimg.cn/20200430223930797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZlaW1lbmcxMTY=,size_16,color_FFFFFF,t_70)<br>
 
-    [[[child1]]]
-      type = Terminal
-      parent = window0
-[plugins]
-————————————————
-版权声明：本文为CSDN博主「大橙员」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/feimeng116/article/details/105849955
+    [[[child1]]]<br>
+      type = Terminal<br>
+      parent = window0<br>
+[plugins]<br>
