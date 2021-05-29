@@ -12,11 +12,11 @@ sudo ./Useful_Tool_4_Ubuntu
 首先：gedit ～/.config/terminator/config<br>
 以下是一款流行的配置方案，可自行调整<br>
 [global_config]<br>
-  suppress_multiple_term_dialog = True<br>
+ \t suppress_multiple_term_dialog = True<br>
 [keybindings]<br>
 [profiles]<br>
-  [[default]]<br>
-    background_color = "#002b36"<br>
+\t  [[default]]<br>
+\t    background_color = "#002b36"<br>
     background_darkness = 0.92<br>
     background_type = transparent<br>
     cursor_color = "#3036ec"<br>
