@@ -1,0 +1,25 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.92
+    background_type = transparent
+    cursor_color = "#3036ec"
+    font = Ubuntu Mono 15
+    foreground_color = "#839496"
+    show_titlebar = False
+    login_shell = True
+    custom_command = tmux
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+[plugins]
+
