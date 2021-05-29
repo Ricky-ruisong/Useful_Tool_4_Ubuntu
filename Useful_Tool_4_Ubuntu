@@ -1,0 +1,40 @@
+#!bin/bash
+
+#Desc  : 自动安装git/Terminator/zsh/oh_my_zsh/Typora/ifconfig/minicom
+#USage : sudo ./Useful_Tool_4_Ubuntu
+#Update: 2021.5.30
+
+#git
+sudo apt install git
+git --version
+
+#Terminator
+sudo apt-get install terminator
+
+#zsh
+sudo apt install curl
+sudo apt-get install zsh
+chsh -s /bin/zsh
+
+#oh_my_zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sed -i 's/ZSH_THEME=.*/ZSH_THEME="ys"/' ~/.zshrc
+source ~/.zshrc
+
+#zsh插件
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-syntax-highlighting    #语法高亮插件
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh}/plugins/zsh-autosuggestions   #自动提示插件
+sed -i 's/plugins.*/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/'  ~/.zshrc	#在.zshrc中添加插件
+source ~/.zshrc
+
+#Typora
+wget -qO - https://typora.io/linux/public-key.asc | sudo apt-key add -
+sudo add-apt-repository 'deb https://typora.io/linux ./'
+sudo apt-get update
+sudo apt-get install typora
+
+#ifconfig
+sudo apt-get install net-tools
+
+#minicom
+sudo apt install minicom
