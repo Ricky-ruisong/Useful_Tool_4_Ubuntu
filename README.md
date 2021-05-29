@@ -30,8 +30,7 @@ sudo ./Useful_Tool_4_Ubuntu
   [[default]]<br>
     [[[window0]]]<br>
       type = Window<br>
-      parent = ""![在这里插入图片描述](https://img-blog.csdnimg.cn/20200430223930797.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZlaW1lbmcxMTY=,size_16,color_FFFFFF,t_70)<br>
-
+      parent = ""<br>
     [[[child1]]]<br>
       type = Terminal<br>
       parent = window0<br>
