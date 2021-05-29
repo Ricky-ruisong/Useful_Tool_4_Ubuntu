@@ -38,3 +38,6 @@ sudo apt-get install net-tools
 
 #minicom
 sudo apt install minicom
+
+#重启
+reboot
